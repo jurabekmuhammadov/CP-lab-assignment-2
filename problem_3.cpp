@@ -11,7 +11,7 @@ int main()
 
   cout << "Welcome to GPA Calculator";
 
-  for (int i = 0;; i++)
+  for (int i = 0; i < 100000; i++)
   {
     cout << "Enter Course "
          << "#" << i + 1 << " name: ";
@@ -56,6 +56,6 @@ int main()
 
   gpa = totalp / totalh;
   cout << "Your GPA is: " << gpa;
-  
+
   return 0;
 }

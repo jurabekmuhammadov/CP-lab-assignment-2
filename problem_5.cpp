@@ -16,7 +16,7 @@ int main()
   m = days / 30;
   d = days % 30;
 
-  cout << "Years : " << y << "\nMonths : " << m << "\nDays : " << d;
+  cout << "Years : " << y << "Months : " << m << "Days : " << d;
 
   return 0;
 }
