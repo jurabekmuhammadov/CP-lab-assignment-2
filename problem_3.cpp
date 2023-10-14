@@ -8,19 +8,26 @@ int main()
 {
   float marks, points, hours, totalp = 0, totalh = 0, gpa;
   string course;
+
   cout << "Welcome to GPA Calculator";
+
   for (int i = 0;; i++)
   {
     cout << "Enter Course "
          << "#" << i + 1 << " name: ";
     cin >> course;
     if (course == "stop")
+    {
       break;
+    }
+
     cout << "Enter " << course << " Credit Hours: ";
     cin >> hours;
+
   mark:
     cout << "Enter " << course << "'s marks from 60 to 100: ";
     cin >> marks;
+
     if (marks <= 100 && marks >= 95)
       points = hours * 5.00;
     else if (marks < 95 && marks >= 90)
@@ -42,9 +49,13 @@ int main()
       cout << "Please Enter Correct marks";
       goto mark;
     }
+
     totalp += points;
     totalh += hours;
   }
+
   gpa = totalp / totalh;
   cout << "Your GPA is: " << gpa;
+  
+  return 0;
 }
